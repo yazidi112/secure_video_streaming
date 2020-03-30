@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !index.php
+RewriteRule (.*.mp4)   index.php?video=$1 [L]
+
